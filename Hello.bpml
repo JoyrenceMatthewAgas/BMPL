@@ -1,0 +1,6 @@
+implement <basic>
+
+function main():
+    name = take("What's your name? ")
+    sayLn("Hello, " + name + ".")
+end
