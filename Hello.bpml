@@ -1,6 +1,6 @@
-implement <basic>
+use "basic.lib"
 
 function main():
-    name = take("What's your name? ")
-    sayLn("Hello, " + name + ".")
-end
+    take("What's your name?", name, size(str));
+    sayLn("Hello, /name/.");
+}
