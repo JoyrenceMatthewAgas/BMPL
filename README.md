@@ -1,14 +1,6 @@
-# BPML
-BPML (Basic Program Mechanism Language) is a alternate, easier and simpler version of C that takes in certain functions from C, Python and Java. It is not object-oriented though it still takes in classes and structs. It also has syntax relating to C++, Python and Lua.
+# BMPL
 
-## A (planned) simple "Hello, world." program:
-```
-use "basic.lib"
+BMPL (Builder's Multi-Purpose Language) is a planned language for many programmers out there, supporting general-purpose, OOP, web design and scripting and app production.
 
-function main():
-    sayLn("Hello, world.");
-}
-```
-
-### Join us!
-You can contribute on helping making this language by suggesting new additions.
+## Join us!
+You can contribute on helping making this language by suggesting new additions or join our implementations of the language.
