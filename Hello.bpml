@@ -1,6 +1,0 @@
-use "basic.lib"
-
-function main():
-    take("What's your name?", name, size(str));
-    sayLn("Hello, /name/.");
-}
