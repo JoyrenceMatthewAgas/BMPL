@@ -1,8 +1,9 @@
 // Planned Version
 
 // General Purpose/Object Oriented
+
 version "general"
-version "object"
+// version "object"
 
 use "basic"
 
