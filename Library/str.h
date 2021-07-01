@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-char *add_str(const char *s1, const char *s2) {
+static char *add_str(const char *s1, const char *s2) {
     size_t s1_len = strlen(s1);
     size_t s2_len = strlen(s2);
     char *ret = malloc(s1_len + s2_len + 1);
@@ -12,11 +12,11 @@ char *add_str(const char *s1, const char *s2) {
     return ret;
 }
 
-int compare_str(char *str, const char *compare) {
+static int compare_str(char *str, const char *compare) {
     return (strcmp(str, compare));
 }
 
-char *copy_str(char *dest, const char *src) {
+static char *copy_str(char *dest, const char *src) {
     char *result = dest;
     while (*src != '\0')
     {
@@ -28,11 +28,11 @@ char *copy_str(char *dest, const char *src) {
     return result;
 }
 
-int get_length(char *str) {
+static int get_length(char *str) {
     return strlen(str);
 }
 
-char *lowercase(char *text) {
+static char *lowercase(char *text) {
     for (char *p = text; *p; ++p) {
         if (isalpha((unsigned char) *p)) {
             *p = tolower((unsigned char) *p);
@@ -41,7 +41,7 @@ char *lowercase(char *text) {
     return text;
 }
 
-char *uppercase(char *text) {
+static char *uppercase(char *text) {
     for (char *p = text; *p; ++p) {
         if (isalpha((unsigned char) *p)) {
             *p = toupper((unsigned char) *p);
