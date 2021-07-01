@@ -1,18 +1,18 @@
 #include <math.h>
 
-int cube_root(int num) {
+static int cube_root(int num) {
     return cbrt(num);
 }
 
-double log_dec(long double dec) {
+static double log_dec(long double dec) {
     return log10f(dec);
 }
 
-double log_num(long long int num) {
+static double log_num(long long int num) {
     return log10f(num);
 }
 
-double power(double x, double y) {
+static double power(double x, double y) {
     int mult = x;
     for (int i = 1; i < y; i++) {
         mult *= x;
@@ -20,7 +20,7 @@ double power(double x, double y) {
     return mult;
 }
 
-int square_root(int num) {
+static int square_root(int num) {
     int mult;
     int result = 0;
     for (int i = 1; i <= num; i++) {
