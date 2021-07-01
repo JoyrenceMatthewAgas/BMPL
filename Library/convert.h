@@ -22,7 +22,7 @@ static int make_int(void *var) {
     return atoi(var);
 }
 
-const static char *make_str_base(char *buf, size_t len, int var) {
+static const char *make_str_base(char *buf, size_t len, int var) {
     static char loc_buf[sizeof(int) * CHAR_BIT];
     if (!buf) {
         buf = loc_buf;
@@ -34,6 +34,6 @@ const static char *make_str_base(char *buf, size_t len, int var) {
     return buf;
 }
 
-const static char *make_str(int var) {
+static const char *make_str(int var) {
     return make_str_base(NULL, 0, var);
 }
