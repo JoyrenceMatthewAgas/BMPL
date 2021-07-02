@@ -23,10 +23,13 @@ int take(const char *prompt, char *result, size_t siz) {
 }
 */
 
-char *take(const char *text) {
-    char result[256];
+char *take(const char *prompt, char *result, size_t size) {
+    char spec[32];
+    if (size == 0)
+        return NULL;
+    snprintf(spec, sizeof spec, "%%%zus", size - 1);
     printf("%s", text);
-    *result = '\0';  // return an empty string on input error
-    scanf("%s", result);
-    return strdup(result);
+    *result = '\0';
+    scanf(spec, result);
+    return result;
 }
