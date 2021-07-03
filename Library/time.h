@@ -1,5 +1,5 @@
 #include <time.h>
 
-long get_time(NULL) {
-    return time(NULL);
+time_t get_time(time_t *tloc) {
+    return time(tloc);
 }
