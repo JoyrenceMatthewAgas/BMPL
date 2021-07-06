@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "all.h"
 #include "basic.h"
 
 #define say(X) printf(_Generic(X,double:"%f",float:"%f",char *:"%s",int:"%d"), X) // output function
