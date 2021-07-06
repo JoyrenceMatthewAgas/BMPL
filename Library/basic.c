@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "basic.h"
 
-#define say(X) printf(_Generic(X,double || float || const float || const double:"%f",char *:"%s",int:"%d"), X) // output function
+#define say(X) printf(_Generic(X,double:"%f",float:"%f",char *:"%s",int:"%d"), X) // output function
 
 #define sayLn(X) printf(_Generic(X,double:"%f\n",float:"%f\n",char *:"%s\n",int:"%d\n"), X) // output function printing a newline
 
