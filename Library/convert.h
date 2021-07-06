@@ -6,18 +6,6 @@ static char get_char(char *str, int pv) {
     return str[pv];
 }
 
-static char make_char(int val) {
-    return (char)val;
-}
-
-static double make_double(int num) {
-    return (double)num;
-}
-
-static float make_float(int num) {
-    return (float)num;
-}
-
 static int make_int(void *var) {
     return atoi(var);
 }
