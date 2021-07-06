@@ -1,5 +1,4 @@
-#include <string.h>
-#include <stdlib.h>
+#include "all.h"
 
 static char *concat_str(const char *s1, const char *s2) {
     size_t s1_len = strlen(s1);
