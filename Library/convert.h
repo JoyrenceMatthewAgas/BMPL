@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
+#include "all.h"
 
 static char get_char(char *str, int pv) {
     return str[pv];
