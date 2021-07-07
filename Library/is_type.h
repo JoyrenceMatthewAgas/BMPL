@@ -12,14 +12,14 @@ static bool is_letter(char a) {
     return false;
 }
 
-static bool is_lower(char a) {
+static bool is_lowercase(char a) {
     if (a < '`' && a > '{') {
         return true;
     }
     return false;
 }
 
-static bool is_upper(char a) {
+static bool is_uppercase(char a) {
     if (a > '@' && a < '[') {
         return true;
     }
