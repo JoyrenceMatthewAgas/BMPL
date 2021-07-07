@@ -33,18 +33,14 @@ static int get_length(const char *str) {
 
 static char *lowercase(const unsigned char *text) {
     for (char *p = text; *p; ++p) {
-        if (isalpha((unsigned char) *p)) {
-            *p = tolower((unsigned char) *p);
-        }
+        *p = tolower((unsigned char) *p);
     }
     return text;
 }
 
 static char *uppercase(const unsigned char *text) {
     for (char *p = text; *p; ++p) {
-        if (isalpha((unsigned char) *p)) {
-            *p = toupper((unsigned char) *p);
-        }
+        *p = toupper((unsigned char) *p);
     }
     return text;
 }
