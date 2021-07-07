@@ -1,21 +1,34 @@
-#include "all.h"
-
-static int is_num(char a) {
-    return isdigit(c);
+static bool is_num(char a) {
+    if ((a > '/' && a < ':')) {
+        return true;
+    }
+    return false;
 }
 
-static int is_letter(char a) {
-    return isalpha(a);
+static bool is_letter(char a) {
+    if ((a > '@' && a < '[') || (a < '`' && a > '{')) {
+        return true;
+    }
+    return false;
 }
 
-static int is_lower(char a) {
-    return islower(a);
+static bool is_lower(char a) {
+    if (a < '`' && a > '{') {
+        return true;
+    }
+    return false;
 }
 
-static int is_upper(char a) {
-    return isupper(a);
+static bool is_upper(char a) {
+    if (a > '@' && a < '[') {
+        return true;
+    }
+    return false;
 }
 
-static int is_space(char a) {
-    return isspace(a);
+static bool is_space(char a) {
+    if (a == ' ') {
+        return true;
+    }
+    return false;
 }
